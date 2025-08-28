@@ -47,58 +47,14 @@ export default function Portfolio() {
   }, [])
 
   const handleResumeDownload = () => {
-    // Create a downloadable resume content
-    const resumeContent = `
-Abu Sayed Chowdhury
-Senior Software Specialist
-Email: sayem227@gmail.com
-Phone: +8801708194191
-GitHub: https://github.com/AscEmon
-LinkedIn: https://www.linkedin.com/in/abu-sayed-chowdhury
-
-PROFESSIONAL SUMMARY
-Experienced software specialist with 5+ years of expertise in Flutter development, mobile app deployment, API integration, and technical mentorship. Successfully delivered 20+ high-performance apps for Android and iOS platforms.
-
-WORK EXPERIENCE
-Senior Software Specialist (March 2021 – Present)
-SSL Wireless, Dhaka, Bangladesh
-• Developed and deployed 15+ Flutter apps with 100% on-time completion
-• Improved API response times by 30% through REST and GraphQL integration
-• Mentored team of 15 developers on state management techniques
-• Led projects for top clients including Othership, SSL-CLI, DESCO, Akij Cement, and BdTax
-
-Software Engineer (Nov 2020 – March 2021)
-Appbd, Dhaka, Bangladesh
-• Designed scalable Flutter applications with GetX state management
-• Enhanced user engagement by 20% with custom animations
-• Strengthened app stability by 30% through Firebase integrations
-
-Mobile Application Developer (March 2020 – Oct 2020)
-RingerSoft Limited, Chattogram, Bangladesh
-• Built e-commerce app using Flutter and published in Store
-• Delivered school management apps for 15+ institutions
-
-EDUCATION
-M.Sc. in Computer Science — Jahangirnagar University (2020–2022) CGPA: 3.63/4.0
-B.Sc. in Computer Science — Bangladesh Army International University (2016–2020) CGPA: 3.87/4.0
-
-TECHNICAL SKILLS
-• Frameworks: Flutter, SwiftUI
-• Languages: Dart, Swift, Kotlin, Java
-• State Management: Riverpod, Bloc, GetX, Provider
-• Databases: SQLite, Hive, Firebase, ObjectBox
-• CI/CD: GitHub Actions, Bitbucket Pipelines, Jenkins
-    `
-
-    const blob = new Blob([resumeContent], { type: "text/plain" })
-    const url = window.URL.createObjectURL(blob)
-    const a = document.createElement("a")
-    a.href = url
-    a.download = "Abu_Sayed_Chowdhury_Resume.txt"
-    document.body.appendChild(a)
-    a.click()
-    document.body.removeChild(a)
-    window.URL.revokeObjectURL(url)
+    // Download the PDF resume file
+    const link = document.createElement("a")
+    link.href = "/resume/Resume_of_Mobile_Developer_5_JU_Sayed.pdf"
+    link.download = "Abu_Sayed_Chowdhury_Resume.pdf"
+    link.target = "_blank"
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
   }
 
   const projects = [
