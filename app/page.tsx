@@ -297,7 +297,7 @@ TECHNICAL SKILLS
           <div className="flex items-center space-x-3">
             <div className="relative">
               <Image
-                src="/images/abu-sayed-profile.jpg"
+                src="https://v0-portfolio-site-development-ebon.vercel.app/images/abu-sayed-profile.jpg"
                 alt="Abu Sayed Chowdhury"
                 width={32}
                 height={32}
@@ -339,7 +339,7 @@ TECHNICAL SKILLS
           >
             <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-primary/20 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 group">
               <Image
-                src="/images/abu-sayed-profile.jpg"
+                src="https://v0-portfolio-site-development-ebon.vercel.app/images/abu-sayed-profile.jpg"
                 alt="Abu Sayed Chowdhury - Senior Flutter Developer"
                 width={160}
                 height={160}
