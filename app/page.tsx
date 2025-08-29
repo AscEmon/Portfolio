@@ -59,7 +59,7 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: "Othership Scheduler",
+      title: "Othership Workplace Scheduler",
       description:
         "Enterprise-grade booking and scheduling platform for meeting rooms, desks, and workspaces with real-time availability.",
       tech: ["Flutter", "Bloc", "REST API", "Firebase"],
@@ -74,8 +74,26 @@ export default function Portfolio() {
       tech: ["Flutter", "Bloc", "KIOSK", "Real-time"],
       category: "Enterprise",
       impact: "Streamlined room management",
-      year: "2023",
+      year: "2024",
       link: "https://apps.apple.com/us/app/othership-room-display/id6479629590",
+    },
+    {
+      title: "Othership Visitor Management",
+      description: "KIOSK application developed with Bloc for managing visitor schedules and display systems.",
+      tech: ["Flutter", "Bloc", "KIOSK", "Real-time"],
+      category: "Enterprise",
+      impact: "Streamlined visitor management",
+      year: "2025",
+      link: "https://apps.apple.com/us/app/othership-room-display/id6479629590",
+    },
+    {
+      title: "myBKB app",
+      description: "myBKB app is a mobile application developed using Flutter that provides a secure mobile banking application with biometric authentication, transaction history, and seamless API integration.",
+      tech: ["Flutter", "Firebase", "API Integration"],
+      category: "FinTech",
+      impact: "Processed $2M+ in transactions",
+      year: "2025",
+      link: "https://apps.apple.com/us/app/mybkb-app/id6739765439",
     },
     {
       title: "Magpie Banking",
@@ -83,8 +101,8 @@ export default function Portfolio() {
         "Secure mobile banking application with biometric authentication, transaction history, and seamless API integration.",
       tech: ["Flutter", "Security", "REST API", "Biometrics"],
       category: "FinTech",
-      impact: "Processed $2M+ in transactions",
-      year: "2022",
+      impact: "Processed $1M+ in transactions",
+      year: "2023",
       link: "https://apps.apple.com/us/app/magpie-app/id6449897818",
     },
     {
@@ -153,6 +171,43 @@ export default function Portfolio() {
       year: "2021",
       link: "https://apps.apple.com/us/app/employee-buddy/id1517212760",
     },
+    {
+      title: "Disaster Alert for BD",
+      description: "Disaster Alert for BD is a SwiftUI app that provides real-time updates on natural disasters in Bangladesh. The app uses Core Data to store user preferences and disaster alerts, and integrates with a REST API to fetch the latest disaster information.",
+      tech: ["SwiftUI", "CoreData", "API Integration"],
+      category: "Utility",
+      impact: "Enhanced team collaboration",
+      year: "2024",
+      link: "https://apps.apple.com/us/app/disaster-alert-for-bd/id6743391177",
+    },
+    {
+      title: "BDHonda+",
+      description: "Develop using Flutter to enhance user experience for Honda bikers.",
+      tech: ["Flutter", "Firebase", "API Integration"],
+      category: "Utility",
+      impact: "Enhanced user experience",
+      year: "2024",
+      link: "https://play.google.com/store/apps/details?id=com.sslwireless.bdhondaPlus&hl=en",
+    },
+    {
+      title: "Pay By Link (PBL)",
+      description: "Develop using Flutter to provide a seamless payment experience for users.",
+      tech: ["Flutter", "Firebase", "API Integration"],
+      category: "FinTech",
+      impact: "Enhanced user experience",
+      year: "2022",
+      link: "https://play.google.com/store/apps/details?id=com.sslwireless.paybylink&hl=en_GB",
+    },
+    {
+      title: "BOnline for Merchants",
+      description: "Develop using Flutter to provide a merchant of GMS can manage their live transactions, orders, and customers.",
+      tech: ["Flutter", "Firebase", "API Integration"],
+      category: "FinTech",
+      impact: "Enhanced user experience",
+      year: "2022",
+      link: "https://apps.apple.com/us/app/bonline-for-merchants/id6444676928",
+    }
+
   ]
 
   const skills = [
@@ -268,9 +323,8 @@ export default function Portfolio() {
               <a
                 key={section}
                 href={`#${section}`}
-                className={`text-sm font-medium transition-colors duration-300 hover:text-primary ${
-                  activeSection === section ? "text-primary border-b-2 border-primary" : ""
-                }`}
+                className={`text-sm font-medium transition-colors duration-300 hover:text-primary ${activeSection === section ? "text-primary border-b-2 border-primary" : ""
+                  }`}
               >
                 {section.charAt(0).toUpperCase() + section.slice(1)}
               </a>
