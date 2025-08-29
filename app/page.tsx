@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { ThemeToggle } from "@/components/theme-toggle"
 import {
   Mail,
   Phone,
@@ -346,14 +347,17 @@ export default function Portfolio() {
               </a>
             ))}
           </nav>
-          <Button
-            size="sm"
-            className="hidden md:flex hover:scale-105 transition-transform duration-200"
-            onClick={handleResumeDownload}
-          >
-            <Download className="mr-2 h-4 w-4" />
-            Resume
-          </Button>
+          <div className="flex items-center gap-2">
+            <ThemeToggle />
+            <Button
+              size="sm"
+              className="hidden md:flex hover:scale-105 transition-transform duration-200"
+              onClick={handleResumeDownload}
+            >
+              <Download className="mr-2 h-4 w-4" />
+              Resume
+            </Button>
+          </div>
         </div>
       </header>
 
