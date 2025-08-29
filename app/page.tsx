@@ -737,7 +737,7 @@ export default function Portfolio() {
                 key={index}
                 variant="outline"
                 size="icon"
-                className="hover:bg-primary hover:text-primary-foreground hover:scale-110 hover:rotate-12 transition-all duration-300"
+                className="hover:bg-primary hover:text-primary-foreground hover:border-primary [&:hover]:text-primary-foreground hover:scale-110 hover:rotate-12 transition-all duration-300"
                 asChild
               >
                 <a href={social.href} target="_blank" rel="noopener noreferrer">
