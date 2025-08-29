@@ -748,7 +748,7 @@ export default function Portfolio() {
       {/* Footer */}
       <footer className="py-8 px-4 border-t bg-muted/30">
         <div className="container max-w-4xl mx-auto text-center text-sm text-muted-foreground">
-          <p>&copy; 2024 Abu Sayed Chowdhury. All rights reserved. Built with Next.js and deployed on Vercel.</p>
+          <p>&copy; 2025 Abu Sayed Chowdhury.</p>
         </div>
       </footer>
     </div>
