@@ -386,7 +386,7 @@ export default function Portfolio() {
               Senior Software Specialist
             </p>
             <p className="text-lg text-muted-foreground mb-8 animate-fade-in-up animation-delay-400">
-              5+ years of Flutter expertise • 20+ successful mobile apps • Technical mentor & team lead
+              5+ years of Flutter expertise • 20+ successful mobile apps • Technical mentor
             </p>
             <div className="flex flex-wrap justify-center gap-6 mb-8 text-sm">
               {[
@@ -715,7 +715,7 @@ export default function Portfolio() {
             <Button
               variant="outline"
               size="lg"
-              className="text-lg px-8 hover:bg-primary hover:text-primary-foreground hover:scale-105 transition-all duration-200"
+              className="text-lg px-8 hover:!bg-primary hover:!text-white hover:!border-primary hover:scale-105 transition-all duration-200"
               asChild
             >
               <a href="tel:+8801708194191">
