@@ -571,11 +571,11 @@ export default function Portfolio() {
                     <Button
                       variant="outline"
                       size="sm"
-                      className="w-full hover:bg-primary hover:text-primary-foreground"
+                      className="w-full hover:!bg-primary hover:!text-white hover:!border-primary transition-all duration-200"
                       asChild
                     >
                       <a href={project.link} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="mr-2 h-4 w-4" />
+                        <ExternalLink className="mr-2 h-3 w-3" />
                         View Project
                       </a>
                     </Button>
@@ -680,7 +680,7 @@ export default function Portfolio() {
                       <Button
                         variant="outline"
                         size="sm"
-                        className="w-full hover:bg-primary hover:text-primary-foreground"
+                        className="w-full hover:!bg-primary hover:!text-white hover:!border-primary transition-all duration-200"
                         asChild
                       >
                         <a href={cert.link} target="_blank" rel="noopener noreferrer">
