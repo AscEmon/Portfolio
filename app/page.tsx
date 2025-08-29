@@ -463,14 +463,14 @@ export default function Portfolio() {
                 { number: "200K+", label: "Users Served" },
                 { number: "15+", label: "Team Members Mentored" },
               ].map((stat, index) => (
-                <Card key={index} className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group">
-                  <CardContent className="p-6 text-center">
-                    <div className="text-3xl font-bold text-primary mb-2 group-hover:scale-110 transition-transform duration-300">
-                      {stat.number}
-                    </div>
-                    <div className="text-sm text-muted-foreground">{stat.label}</div>
-                  </CardContent>
-                </Card>
+                <div
+                  key={index}
+                  className={`flex items-center gap-2 text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-105 animate-fade-in-up`}
+                  style={{ animationDelay: `${600 + index * 200}ms` }}
+                >
+                  <stat.icon className="h-4 w-4 text-primary" />
+                  <span>{stat.text}</span>
+                </div>
               ))}
             </div>
           </div>
@@ -570,7 +570,7 @@ export default function Portfolio() {
                     <Button
                       variant="outline"
                       size="sm"
-                      className="w-full bg-transparent hover:scale-105 transition-transform duration-200"
+                      className="w-full hover:bg-primary hover:text-primary-foreground"
                       asChild
                     >
                       <a href={project.link} target="_blank" rel="noopener noreferrer">
@@ -676,7 +676,12 @@ export default function Portfolio() {
                       </Badge>
                     </div>
                     {cert.link && (
-                      <Button variant="outline" size="sm" className="w-full bg-transparent" asChild>
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="w-full hover:bg-primary hover:text-primary-foreground"
+                        asChild
+                      >
                         <a href={cert.link} target="_blank" rel="noopener noreferrer">
                           <ExternalLink className="mr-2 h-3 w-3" />
                           View Certificate
@@ -709,7 +714,7 @@ export default function Portfolio() {
             <Button
               variant="outline"
               size="lg"
-              className="text-lg px-8 bg-transparent hover:scale-105 transition-transform duration-200"
+              className="text-lg px-8 hover:bg-primary hover:text-primary-foreground hover:scale-105 transition-all duration-200"
               asChild
             >
               <a href="tel:+8801708194191">
@@ -731,7 +736,7 @@ export default function Portfolio() {
                 key={index}
                 variant="outline"
                 size="icon"
-                className="hover:scale-110 hover:rotate-12 transition-all duration-300 bg-transparent"
+                className="hover:bg-primary hover:text-primary-foreground hover:scale-110 hover:rotate-12 transition-all duration-300"
                 asChild
               >
                 <a href={social.href} target="_blank" rel="noopener noreferrer">
