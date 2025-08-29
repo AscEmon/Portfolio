@@ -212,11 +212,11 @@ export default function Portfolio() {
 
   const skills = [
     { category: "Mobile Frameworks", items: ["Flutter", "SwiftUI"] },
-    { category: "Programming Languages", items: ["Dart", "Swift", "Kotlin", "Python"] },
+    { category: "Programming Languages", items: ["Dart", "Swift", "Python"] },
     { category: "State Management", items: ["Riverpod", "Bloc", "GetX", "Provider"] },
-    { category: "Databases", items: ["SQLite", "Hive", "Firebase", "ObjectBox", "SQflite"] },
+    { category: "Databases", items: ["SQLite", "Hive", "Firebase", "ObjectBox"] },
     { category: "CI/CD & DevOps", items: ["GitHub Actions", "Bitbucket Pipelines", "Codemagic"] },
-    { category: "AI IDE & Tools", items: ["Windsurf", "Cursor", "MCP", "NoteBookLM", "Gamma"] },
+    { category: "AI IDE & Tools", items: ["Windsurf", "Cursor", "v0", "MCP", "NoteBookLM", "Gamma"] },
   ]
 
   const experiences = [
@@ -226,10 +226,11 @@ export default function Portfolio() {
       period: "March 2021 – Present",
       location: "Dhaka, Bangladesh",
       achievements: [
+        "Took ownership of the development process and led sessions for 300+ colleagues focusing on Flutter and AI Development.",
         "Led development of 15+ Flutter applications with 100% on-time delivery and zero critical bugs in production",
         "Architected scalable mobile solutions serving 200K+ users across Android and iOS platforms",
         "Improved API response times by 30% through optimized REST and GraphQL integration patterns",
-        "Mentored and upskilled a team of 15 developers on advanced state management and clean architecture",
+        "Mentored and upskilled a team of 15 developers on advanced state management and bloc architecture",
         "Established CI/CD pipelines reducing deployment time from 2 hours to 15 minutes",
         "Led technical interviews and contributed to hiring 5 new developers",
       ],
@@ -240,10 +241,11 @@ export default function Portfolio() {
       period: "Nov 2020 – March 2021",
       location: "Dhaka, Bangladesh",
       achievements: [
-        "Designed and implemented scalable Flutter applications using GetX state management architecture",
-        "Enhanced user engagement by 20% through custom animations and micro-interactions using CustomPainter",
-        "Strengthened app stability by 30% through comprehensive Firebase integration and crash analytics",
-        "Collaborated with UI/UX designers to implement pixel-perfect responsive designs",
+        "Skilled in implementing the Model-View-Controller (MVC) pattern using GetX for optimized app structure and maintainability.",
+        "Proficient in integrating various Firebase services, including database, storage, Crashlytics, Analytics, Firebase Messaging, local notifications, and push notifications for Android and iOS.",
+        "Utilized custom painters with animation to create engaging user interfaces and enhanced user experience.",
+        "Skilled in utilizing animation and animated widgets to create dynamic and responsive interfaces, improving the app's overall aesthetic and usability",
+
       ],
     },
     {
@@ -252,10 +254,10 @@ export default function Portfolio() {
       period: "March 2020 – Oct 2020",
       location: "Chattogram, Bangladesh",
       achievements: [
-        "Built and published a full-featured e-commerce application with payment gateway integration",
-        "Delivered school management systems for 15+ educational institutions with real-time data synchronization",
-        "Implemented offline-first architecture ensuring 99.9% app availability",
-        "Reduced app loading time by 40% through performance optimization techniques",
+        "Experienced in developing school management and E-commerce apps, ensuring efficient functionality and user experience.",
+        "Successfully developed an E-commerce app using Flutter and Provider state management, meeting a tight project schedule and delivering a high-quality product.",
+        "Proficient in Android Studio and Java, utilizing these tools to develop robust and efficient applications with optimized code.",
+        "Skilled in deploying apps on Play Store, ensuring proper app store guidelines are met and the app is easily accessible to users.",
       ],
     },
   ]
@@ -428,7 +430,7 @@ export default function Portfolio() {
               <p className="text-lg leading-relaxed mb-6">
                 Passionate Senior Software Specialist with 5+ years of expertise in Flutter development, mobile app
                 architecture, and technical leadership. I've successfully delivered 20+ high-performance applications
-                serving over 500,000 users across Android and iOS platforms.
+                serving over 200,000 users across Android and iOS platforms.
               </p>
               <p className="text-lg leading-relaxed mb-6">
                 My expertise spans scalable mobile architectures, CI/CD pipeline optimization, secure API integrations,
@@ -450,7 +452,7 @@ export default function Portfolio() {
               {[
                 { number: "20+", label: "Apps Delivered" },
                 { number: "5+", label: "Years Experience" },
-                { number: "500K+", label: "Users Served" },
+                { number: "200K+", label: "Users Served" },
                 { number: "15+", label: "Team Members Mentored" },
               ].map((stat, index) => (
                 <Card key={index} className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group">
