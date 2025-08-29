@@ -91,7 +91,7 @@ export default function Portfolio() {
       description: "myBKB app is a mobile application developed using Flutter that provides a secure mobile banking application with biometric authentication, transaction history, and seamless API integration.",
       tech: ["Flutter", "Firebase", "API Integration"],
       category: "FinTech",
-      impact: "Processed $2M+ in transactions",
+      impact: "Processed $1M+ in transactions",
       year: "2025",
       link: "https://apps.apple.com/us/app/mybkb-app/id6739765439",
     },
@@ -101,7 +101,7 @@ export default function Portfolio() {
         "Secure mobile banking application with biometric authentication, transaction history, and seamless API integration.",
       tech: ["Flutter", "Security", "REST API", "Biometrics"],
       category: "FinTech",
-      impact: "Processed $1M+ in transactions",
+      impact: "Processed $2M+ in transactions",
       year: "2023",
       link: "https://apps.apple.com/us/app/magpie-app/id6449897818",
     },
@@ -211,12 +211,12 @@ export default function Portfolio() {
   ]
 
   const skills = [
-    { category: "Mobile Frameworks", items: ["Flutter", "SwiftUI", "React Native"] },
-    { category: "Programming Languages", items: ["Dart", "Swift", "Kotlin", "Java", "TypeScript"] },
+    { category: "Mobile Frameworks", items: ["Flutter", "SwiftUI"] },
+    { category: "Programming Languages", items: ["Dart", "Swift", "Kotlin", "Python"] },
     { category: "State Management", items: ["Riverpod", "Bloc", "GetX", "Provider"] },
-    { category: "Databases", items: ["SQLite", "Hive", "Firebase", "ObjectBox", "PostgreSQL"] },
-    { category: "CI/CD & DevOps", items: ["GitHub Actions", "Bitbucket Pipelines", "Jenkins", "Docker"] },
-    { category: "Design & Tools", items: ["Figma", "Adobe XD", "Jira", "Trello", "Postman"] },
+    { category: "Databases", items: ["SQLite", "Hive", "Firebase", "ObjectBox", "SQflite"] },
+    { category: "CI/CD & DevOps", items: ["GitHub Actions", "Bitbucket Pipelines", "Codemagic"] },
+    { category: "AI IDE & Tools", items: ["Windsurf", "Cursor", "MCP", "NoteBookLM", "Gamma"] },
   ]
 
   const experiences = [
@@ -227,11 +227,11 @@ export default function Portfolio() {
       location: "Dhaka, Bangladesh",
       achievements: [
         "Led development of 15+ Flutter applications with 100% on-time delivery and zero critical bugs in production",
-        "Architected scalable mobile solutions serving 500K+ users across Android and iOS platforms",
+        "Architected scalable mobile solutions serving 200K+ users across Android and iOS platforms",
         "Improved API response times by 30% through optimized REST and GraphQL integration patterns",
         "Mentored and upskilled a team of 15 developers on advanced state management and clean architecture",
         "Established CI/CD pipelines reducing deployment time from 2 hours to 15 minutes",
-        "Led technical interviews and contributed to hiring 8 new developers",
+        "Led technical interviews and contributed to hiring 5 new developers",
       ],
     },
     {
@@ -380,7 +380,7 @@ export default function Portfolio() {
             </p>
             <div className="flex flex-wrap justify-center gap-6 mb-8 text-sm">
               {[
-                { icon: Users, text: "500K+ Users Served" },
+                { icon: Users, text: "200K+ Users Served" },
                 { icon: Code2, text: "15+ Apps in Production" },
                 { icon: Award, text: "Team of 15 Mentored" },
               ].map((item, index) => (
