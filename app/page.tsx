@@ -262,6 +262,20 @@ export default function Portfolio() {
 
   const certifications = [
     {
+      title: "Unit 1: Foundations of Agents",
+      issuer: "Hugging Face",
+      date: "March 2025",
+      credentialId: "Hugging-Face-Agents-Course",
+      link: "https://huggingface.co/datasets/agents-course/certificates/resolve/main/certificates/Sayed1699/2025-03-06.png",
+    },
+    {
+      title: "Build Apps with Windsurf’s AI Coding Agents!",
+      issuer: "DeepLearning.AI",
+      date: "March 2025",
+      credentialId: "Windsurf-AI-Coding-Agents",
+      link: "https://learn.deeplearning.ai/accomplishments/dea26207-b5d7-4835-8604-6446843f6412",
+    },
+    {
       title: "Introduction to iOS Mobile Application Development",
       issuer: "Meta via Coursera",
       date: "March 2024",
