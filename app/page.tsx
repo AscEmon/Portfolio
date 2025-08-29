@@ -406,27 +406,7 @@ export default function Portfolio() {
               ))}
             </div>
           </div>
-          <div
-            className={`flex flex-col sm:flex-row gap-4 justify-center transition-all duration-1000 delay-1000 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}
-          >
-            <Button size="lg" className="text-lg px-8 hover:scale-105 transition-transform duration-200" asChild>
-              <a href="mailto:sayem227@gmail.com">
-                <Mail className="mr-2 h-5 w-5" />
-                Get In Touch
-              </a>
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="text-lg px-8 bg-transparent hover:scale-105 transition-transform duration-200"
-              asChild
-            >
-              <a href="#projects">
-                <ExternalLink className="mr-2 h-5 w-5" />
-                View Projects
-              </a>
-            </Button>
-          </div>
+         
         </div>
       </section>
 
