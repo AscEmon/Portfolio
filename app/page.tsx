@@ -390,18 +390,19 @@ export default function Portfolio() {
             </p>
             <div className="flex flex-wrap justify-center gap-6 mb-8 text-sm">
               {[
-                { icon: Users, text: "200K+ Users Served" },
-                { icon: Code2, text: "15+ Apps in Production" },
-                { icon: Award, text: "Team of 15 Mentored" },
-              ].map((item, index) => (
-                <div
-                  key={index}
-                  className={`flex items-center gap-2 text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-105 animate-fade-in-up`}
-                  style={{ animationDelay: `${600 + index * 200}ms` }}
-                >
-                  <item.icon className="h-4 w-4 text-primary" />
-                  <span>{item.text}</span>
-                </div>
+                { number: "20+", label: "Apps Delivered" },
+                { number: "5+", label: "Years Experience" },
+                { number: "200K+", label: "Users Served" },
+                { number: "15+", label: "Team Members Mentored" },
+              ].map((stat, index) => (
+                <Card key={index} className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group">
+                  <CardContent className="p-6 text-center">
+                    <div className="text-3xl font-bold text-primary mb-2 group-hover:scale-110 transition-transform duration-300">
+                      {stat.number}
+                    </div>
+                    <div className="text-sm text-muted-foreground">{stat.label}</div>
+                  </CardContent>
+                </Card>
               ))}
             </div>
           </div>
@@ -463,14 +464,14 @@ export default function Portfolio() {
                 { number: "200K+", label: "Users Served" },
                 { number: "15+", label: "Team Members Mentored" },
               ].map((stat, index) => (
-                <div
-                  key={index}
-                  className={`flex items-center gap-2 text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-105 animate-fade-in-up`}
-                  style={{ animationDelay: `${600 + index * 200}ms` }}
-                >
-                  <stat.icon className="h-4 w-4 text-primary" />
-                  <span>{stat.text}</span>
-                </div>
+                <Card key={index} className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group">
+                  <CardContent className="p-6 text-center">
+                    <div className="text-3xl font-bold text-primary mb-2 group-hover:scale-110 transition-transform duration-300">
+                      {stat.number}
+                    </div>
+                    <div className="text-sm text-muted-foreground">{stat.label}</div>
+                  </CardContent>
+                </Card>
               ))}
             </div>
           </div>
