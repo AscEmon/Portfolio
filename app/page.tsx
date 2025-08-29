@@ -321,7 +321,7 @@ export default function Portfolio() {
       <header
         className={`sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 transition-all duration-500 ${isVisible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"}`}
       >
-        <div className="container flex h-16 items-center justify-between">
+        <div className="flex h-16 items-center justify-between px-5">
           <div className="flex items-center space-x-3">
             <div className="relative">
               <Image
@@ -335,28 +335,32 @@ export default function Portfolio() {
             </div>
             <h1 className="text-xl font-bold text-primary">Abu Sayed</h1>
           </div>
-          <nav className="hidden md:flex items-center space-x-6">
-            {["about", "experience", "projects", "skills", "certifications", "contact"].map((section) => (
-              <a
-                key={section}
-                href={`#${section}`}
-                className={`text-sm font-medium transition-colors duration-300 hover:text-primary ${activeSection === section ? "text-primary border-b-2 border-primary" : ""
-                  }`}
+          
+          <div className="flex items-center gap-4">
+            <nav className="hidden md:flex items-center space-x-6">
+              {["about", "experience", "projects", "skills", "certifications", "contact"].map((section) => (
+                <a
+                  key={section}
+                  href={`#${section}`}
+                  className={`text-sm font-medium transition-colors duration-300 hover:text-primary ${activeSection === section ? "text-primary border-b-2 border-primary" : ""
+                    }`}
+                >
+                  {section.charAt(0).toUpperCase() + section.slice(1)}
+                </a>
+              ))}
+            </nav>
+            
+            <div className="flex items-center gap-2">
+              <ThemeToggle />
+              <Button
+                size="sm"
+                className="flex hover:scale-105 transition-transform duration-200"
+                onClick={handleResumeDownload}
               >
-                {section.charAt(0).toUpperCase() + section.slice(1)}
-              </a>
-            ))}
-          </nav>
-          <div className="flex items-center gap-2">
-            <ThemeToggle />
-            <Button
-              size="sm"
-              className="hidden md:flex hover:scale-105 transition-transform duration-200"
-              onClick={handleResumeDownload}
-            >
-              <Download className="mr-2 h-4 w-4" />
-              Resume
-            </Button>
+                <Download className="mr-2 h-4 w-4" />
+                Resume
+              </Button>
+            </div>
           </div>
         </div>
       </header>
