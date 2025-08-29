@@ -26,7 +26,7 @@ export function ThemeToggle() {
     <Button
       variant="outline"
       size="icon"
-      className="h-9 w-9"
+      className="h-9 w-9 hover:bg-gray-100/80 dark:hover:bg-gray-800/80 transition-colors duration-200"
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
     >
       {theme === "light" ? (
