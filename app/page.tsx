@@ -322,8 +322,8 @@ export default function Portfolio() {
     { category: "Backend & APIs", items: ["REST API", "GraphQL", "Firebase", "Express.js", "Node.js"] },
     { category: "Databases", items: ["MongoDB", "SQLite", "Hive", "Firebase", "ObjectBox", "CoreData"] },
     { category: "CI/CD & DevOps", items: ["Jenkins", "GitHub Actions", "Bitbucket Pipelines", "Codemagic"] },
-    { category: "AI & Automation", items: ["Google ADK", "n8n", "MCP", "Claude Code", "AI Agents"] },
-    { category: "AI IDE & Tools", items: ["Claude Desktop", "Claude Code", "Google Antigravity", "Windsurf", "Cursor", "v0", "NoteBookLM", "Gamma",] },
+    { category: "Familiar", items: ["Google ADK", "n8n", "MCP", "v0", "NoteBookLM", "Gamma"] },
+    { category: "AI IDE & Tools", items: ["Claude Desktop", "Claude Code", "Google Antigravity", "Windsurf", "Cursor"] },
   ]
 
   const experiences: Experience[] = [
