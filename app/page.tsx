@@ -470,7 +470,7 @@ export default function Portfolio() {
       issuer: "MSB Academy",
       date: "April 2020",
       credentialId: "MSB-ANDROID-2020",
-      link: "",
+      link: "https://drive.google.com/file/d/1uAop0OFC8t6vQOElsWQ7n2_rJlJLg8VV/view",
     },
     {
       title: "Neural Networks and Deep Learning",
